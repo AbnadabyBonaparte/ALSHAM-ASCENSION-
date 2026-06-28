@@ -180,3 +180,65 @@ textarea.underline-input {
     font-size: 16px;
   }
 }
+
+/* HERO-001 — The Observatory */
+.hero-observatory__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+.hero-observatory__overlay {
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--color-obsidian) 55%, transparent) 0%,
+    color-mix(in srgb, var(--color-obsidian) 35%, transparent) 45%,
+    color-mix(in srgb, var(--color-obsidian) 72%, transparent) 100%
+  );
+}
+
+.hero-observatory__vignette {
+  background: radial-gradient(
+    ellipse at center,
+    transparent 40%,
+    color-mix(in srgb, var(--color-obsidian) 75%, transparent) 100%
+  );
+  opacity: 0.85;
+}
+
+.hero-observatory__glow {
+  background: radial-gradient(
+    ellipse 80% 50% at 50% 15%,
+    color-mix(in srgb, var(--color-gold) 12%, transparent) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.hero-observatory__headline {
+  text-shadow:
+    0 2px 24px color-mix(in srgb, var(--color-obsidian) 90%, transparent),
+    0 1px 2px color-mix(in srgb, var(--color-obsidian) 80%, transparent);
+}
+
+.hero-observatory__text {
+  text-shadow: 0 1px 16px color-mix(in srgb, var(--color-obsidian) 85%, transparent);
+}
+
+@media (max-width: 768px) {
+  .hero-observatory {
+    min-height: 100svh;
+  }
+
+  .hero-observatory__image {
+    object-position: center 30%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-observatory__image {
+    object-position: center 40%;
+  }
+}

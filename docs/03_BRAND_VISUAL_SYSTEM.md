@@ -397,6 +397,20 @@ Monoline 1.25–2px · Grid 48×48 · Proprietários · Zero bibliotecas
 
 ---
 
+# HERO-001 — PRIMEIRA CENA OFICIAL (FASE 1 DIREÇÃO DE ARTE)
+
+| Campo | Valor |
+|-------|-------|
+| **ID** | HERO-001 |
+| **Nome** | The Observatory |
+| **Status** | Produção — integrado na landing |
+| **Função** | Cena institucional principal; define o DNA visual das próximas cenas |
+| **Guidelines** | [HERO_VISUAL_GUIDELINES.md](./HERO_VISUAL_GUIDELINES.md) |
+
+> HERO-001 torna-se a **primeira cena oficial** do universo visual ALSHAM. Toda cena futura deriva do mesmo DNA: Observatório · arquitetura monumental · patrimônio · luz dourada · mármore negro · bronze.
+
+---
+
 # DECLARAÇÃO DE APROVAÇÃO — PILAR 03
 
 | Item | Status |

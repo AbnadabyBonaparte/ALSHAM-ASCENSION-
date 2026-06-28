@@ -21,8 +21,8 @@ export function TopBar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 border-b ${
         scrolled
-          ? 'bg-obsidian/80 backdrop-blur-[20px] border-gold/30'
-          : 'bg-obsidian border-gold/20'
+          ? 'bg-obsidian/90 backdrop-blur-[20px] border-gold/30'
+          : 'bg-obsidian/25 backdrop-blur-[8px] border-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 h-14 flex items-center justify-between">

@@ -693,3 +693,18 @@ Nenhuma mudança conceitual sem registro KGR.
 
 **Após fechamento ADR-0001:** Architecture Freeze pleno — zero nova arquitetura por 90 dias.
 
+---
+
+# COMPLEMENTO — DIREÇÃO DE ARTE FASE 1 (2026-06-28)
+
+**Status:** Execução visual — não altera arquitetura conceitual (MAD estrutural intacto).
+
+| Registro | Valor |
+|----------|-------|
+| **HERO-001** | The Observatory — primeira cena oficial do universo visual ALSHAM |
+| **Arquivo** | `public/images/hero/hero-observatory-4k.webp` |
+| **Guidelines** | `docs/HERO_VISUAL_GUIDELINES.md` |
+| **Asset Library** | `docs/07_ASSET_LIBRARY.md` · `public/assets/ASSET_MANIFEST.json` |
+
+HERO-001 define o padrão visual institucional para todas as cenas subsequentes do ecossistema ALSHAM.
+

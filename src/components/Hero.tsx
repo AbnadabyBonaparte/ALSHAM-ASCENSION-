@@ -1,54 +1,55 @@
-import { motion } from 'framer-motion'
+import { motion, useScroll, useTransform } from 'framer-motion'
+import { useRef } from 'react'
 
-const PARTICLES = Array.from({ length: 20 }, (_, i) => ({
-  id: i,
-  left: `${Math.random() * 100}%`,
-  top: `${Math.random() * 100}%`,
-  delay: Math.random() * 4,
-  size: Math.random() * 3 + 1,
-}))
+const HERO_DESKTOP = '/images/hero/hero-observatory-4k.webp'
+const HERO_MOBILE = '/images/hero/hero-observatory-mobile.webp'
 
 export function Hero() {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-obsidian">
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              'radial-gradient(ellipse at 50% 0%, color-mix(in srgb, var(--color-gold) 8%, transparent) 0%, transparent 60%)',
-          }}
-        />
-        {PARTICLES.map((p) => (
-          <div
-            key={p.id}
-            className="particle absolute rounded-full bg-gold"
-            style={{
-              left: p.left,
-              top: p.top,
-              width: p.size,
-              height: p.size,
-              animationDelay: `${p.delay}s`,
-            }}
-          />
-        ))}
-      </div>
+  const sectionRef = useRef<HTMLElement>(null)
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ['start start', 'end start'],
+  })
+  const imageY = useTransform(scrollYProgress, [0, 1], ['0%', '6%'])
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center pt-20">
+  return (
+    <section
+      ref={sectionRef}
+      className="hero-observatory relative min-h-[100svh] flex items-center justify-center overflow-hidden"
+      aria-label="The Observatory — HERO-001"
+    >
+      <motion.div className="hero-observatory__media absolute inset-0" style={{ y: imageY }}>
+        <picture>
+          <source media="(max-width: 768px)" srcSet={HERO_MOBILE} type="image/webp" />
+          <img
+            src={HERO_DESKTOP}
+            alt=""
+            className="hero-observatory__image"
+            fetchPriority="high"
+            decoding="async"
+          />
+        </picture>
+      </motion.div>
+
+      <div className="hero-observatory__overlay absolute inset-0" aria-hidden />
+      <div className="hero-observatory__vignette absolute inset-0" aria-hidden />
+      <div className="hero-observatory__glow absolute inset-0" aria-hidden />
+
+      <div className="relative z-10 w-full max-w-5xl mx-auto px-6 sm:px-8 text-center pt-24 pb-20 sm:pt-28">
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 1.6 }}
-          className="section-eyebrow mb-8"
+          transition={{ duration: 0.7, delay: 0.2, ease: 'easeOut' }}
+          className="section-eyebrow mb-8 hero-observatory__text"
         >
           — Holding de Engenharia de Autoridade —
         </motion.p>
 
         <motion.h1
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.8 }}
-          className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-[88px] font-bold text-light leading-[1.1] mb-8"
+          transition={{ duration: 0.85, delay: 0.35, ease: 'easeOut' }}
+          className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-[88px] font-bold text-light leading-[1.08] mb-8 hero-observatory__headline"
         >
           A maioria vende tempo.
           <br />
@@ -56,19 +57,19 @@ export function Hero() {
         </motion.h1>
 
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 2 }}
-          className="text-champagne text-lg sm:text-xl md:text-[22px] max-w-3xl mx-auto mb-12 font-light"
+          transition={{ duration: 0.7, delay: 0.5, ease: 'easeOut' }}
+          className="text-champagne text-lg sm:text-xl md:text-[22px] max-w-3xl mx-auto mb-12 font-light hero-observatory__text"
         >
           Transformamos conhecimento humano em patrimônio intelectual mensurável,
           autoridade reconhecida e legado duradouro.
         </motion.p>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 2.2 }}
+          transition={{ duration: 0.7, delay: 0.65, ease: 'easeOut' }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
         >
           <a href="#aplicar" className="cta-primary w-full sm:w-auto text-center">
@@ -82,18 +83,18 @@ export function Hero() {
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 2.4 }}
-          className="text-platinum text-sm opacity-60"
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="text-platinum text-sm opacity-70 hero-observatory__text"
         >
           Acesso por curadoria. Nem todo profissional se qualifica.
         </motion.p>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
         <motion.div
           animate={{ y: [0, 8, 0] }}
-          transition={{ repeat: Infinity, duration: 2 }}
-          className="w-px h-12 bg-gradient-to-b from-gold to-transparent"
+          transition={{ repeat: Infinity, duration: 2.4, ease: 'easeInOut' }}
+          className="w-px h-12 bg-gradient-to-b from-gold to-transparent opacity-80"
         />
       </div>
     </section>

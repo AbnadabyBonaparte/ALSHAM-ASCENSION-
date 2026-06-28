@@ -18,7 +18,7 @@
 | **Documento pai** | DOC-06 |
 | **Última revisão** | 2026-06-28 |
 | **Data** | 2026-06-28 |
-| **Histórico** | v1.0 — Estrutura inicial (zero assets produzidos) |
+| **Histórico** | v1.0 — Estrutura inicial · v1.1 — HERO-001 produção Fase 1 Direção de Arte |
 | **Impacto** | Rastreabilidade de todo asset |
 | **Nível de autoridade** | Registro |
 
@@ -28,10 +28,51 @@
 
 | Métrica | Valor |
 |---------|-------|
-| Assets produzidos | **0** |
-| Assets aprovados | **0** |
+| Assets produzidos | **1** |
+| Assets aprovados | **1** |
 | Inventário planejado | ~244 (DOC-06) |
-| Fase | Pré-produção — aguardando Fase 2 (símbolo) |
+| Fase | **Direção de Arte Fase 1** — HERO-001 em produção |
+
+---
+
+# ESTRUTURA `public/assets/`
+
+```
+public/assets/
+  hero/           ← HERO-001
+  scenes/
+  backgrounds/
+  textures/
+  patterns/
+  diagrams/
+  icons/
+  symbols/
+  logos/
+  motion/
+  illustrations/
+  ASSET_MANIFEST.json
+```
+
+Espelho de entrega: `public/images/hero/` (paths de implementação web).
+
+---
+
+# REGISTRO — HERO-001
+
+| Campo | Valor |
+|-------|-------|
+| **ID** | HERO-001 |
+| **Nome** | The Observatory |
+| **Categoria** | Hero |
+| **Versão** | 1.0 |
+| **Status** | Produção |
+| **Origem** | Direção de Arte ALSHAM — Fase 1 |
+| **Descrição** | Cena institucional principal — Observatório do Patrimônio |
+| **Data** | 2026-06-28 |
+| **Arquivo** | `public/images/hero/hero-observatory-4k.webp` |
+| **Mobile** | `public/images/hero/hero-observatory-mobile.webp` |
+| **Library** | `public/assets/hero/hero-observatory-4k.webp` |
+| **Guidelines** | [HERO_VISUAL_GUIDELINES.md](./HERO_VISUAL_GUIDELINES.md) |
 
 ---
 
@@ -69,8 +110,11 @@ Cada asset aprovado será registrado neste formato:
 ## Icons (0/48)
 *Aguardando DOC-03A ícones*
 
-## Scenes / Hero (0/4)
-*Aguardando Brand Mark + sistema de aplicações*
+## Scenes / Hero (1/4)
+
+| ID | Nome | Arquivo | Status |
+|----|------|---------|--------|
+| **HERO-001** | The Observatory | `public/images/hero/hero-observatory-4k.webp` | **Produção** |
 
 ## 3D Renders (0/16)
 *Aguardando Hero*
