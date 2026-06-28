@@ -411,6 +411,22 @@ Monoline 1.25–2px · Grid 48×48 · Proprietários · Zero bibliotecas
 
 ---
 
+# ALSHAM ICON SYSTEM™ (v1.0)
+
+| Campo | Valor |
+|-------|-------|
+| **ID** | DOC-ICON-01 |
+| **Nome** | ALSHAM Icon System™ |
+| **Status** | Produção — integrado na landing |
+| **Biblioteca** | 40 símbolos proprietários (ICO-001…ICO-040) |
+| **Documentação** | [ICON_SYSTEM.md](./ICON_SYSTEM.md) |
+| **Componente** | `src/components/icons/AlshamIcon.tsx` |
+| **Assets** | `public/assets/icons/` |
+
+> Substitui integralmente ícones temporários (emoji, unicode, bibliotecas públicas). Símbolos institucionais line art — gravuras, não ícones SaaS.
+
+---
+
 # DECLARAÇÃO DE APROVAÇÃO — PILAR 03
 
 | Item | Status |

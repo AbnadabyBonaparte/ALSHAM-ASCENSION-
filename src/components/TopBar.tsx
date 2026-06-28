@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
+import { AlshamIcon } from '@/components/icons'
 
 const NAV_ITEMS = [
   { label: 'Tese', href: '#tese' },
@@ -27,7 +28,7 @@ export function TopBar() {
     >
       <div className="max-w-7xl mx-auto px-6 h-14 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2 group">
-          <span className="text-gold text-xl">⚜</span>
+          <AlshamIcon id="ICO-040" size={22} strokeWidth={1.5} title="ALSHAM Heritage" />
           <span className="font-display text-gold text-lg font-semibold tracking-wide">
             ALSHAM™
           </span>
@@ -86,7 +87,7 @@ export function Loader() {
         transition={{ duration: 0.8, ease: 'easeOut' }}
         className="text-center"
       >
-        <div className="text-gold text-5xl mb-4">⚜</div>
+        <AlshamIcon id="ICO-040" size={48} strokeWidth={1.5} className="mx-auto mb-4" title="ALSHAM Heritage" />
         <div className="font-display text-gold text-2xl tracking-[0.2em]">ALSHAM™</div>
         <motion.div
           className="mt-4 h-px bg-gold mx-auto"

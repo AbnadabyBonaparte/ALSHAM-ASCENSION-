@@ -216,5 +216,26 @@ presence.light → volumetric god rays
 
 ---
 
+# VI. ALSHAM ICON SYSTEM™
+
+| Token | Valor |
+|-------|-------|
+| `--icon-stroke` | `#C6A45A` |
+| `--icon-stroke-hover` | `#F2D18B` |
+| `--icon-grid` | `48×48` (módulo 4px) |
+| `--icon-stroke-width` | `1.5px` / `2px` |
+| `--icon-fill` | `none` |
+
+**Componente:** `AlshamIcon` · **Registry:** `iconRegistry.ts` · **Docs:** [ICON_SYSTEM.md](./ICON_SYSTEM.md)
+
+### Regras
+
+1. Proibido Lucide, Heroicons, Feather, Font Awesome, Tabler e equivalentes
+2. Line art apenas — sem fill, sombra ou gradiente nos símbolos
+3. Grid 48×48 derivado do selo Heritage (ICO-040)
+4. Hover via `.alsham-icon` → `#F2D18B`
+
+---
+
 **ALSHAM GLOBAL COMMERCEâ"¢**  
 *Knowledge Engineered Into Legacy.*

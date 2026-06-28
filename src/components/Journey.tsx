@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
+import { AlshamIcon } from '@/components/icons'
 import { JOURNEY_STEPS } from '@/lib/constants'
 
 export function Journey() {
@@ -39,13 +40,13 @@ export function Journey() {
               onMouseLeave={() => setActiveStep(null)}
             >
               <div
-                className={`absolute left-0 top-1 w-14 h-14 border flex items-center justify-center transition-all duration-300 ${
+                className={`absolute left-0 top-1 w-14 h-14 border flex items-center justify-center transition-all duration-300 text-gold ${
                   activeStep === step.id
                     ? 'border-gold bg-gold/10 shadow-[0_0_20px_color-mix(in_srgb,var(--color-gold)_20%,transparent)]'
                     : 'border-gold/30 bg-onyx'
                 }`}
               >
-                <span className="font-display text-gold text-lg">{step.id}</span>
+                <AlshamIcon id={step.iconId} size={28} strokeWidth={1.5} />
               </div>
 
               <div

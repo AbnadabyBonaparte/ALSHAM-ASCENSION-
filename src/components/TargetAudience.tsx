@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { AlshamIcon } from '@/components/icons'
 import { VERTICALS } from '@/lib/constants'
 
 export function TargetAudience() {
@@ -28,7 +29,7 @@ export function TargetAudience() {
               transition={{ duration: 0.5, delay: index * 0.08 }}
               className="group p-8 border border-gold/10 bg-obsidian hover:border-gold/40 hover:-translate-y-1 transition-all duration-300"
             >
-              <span className="text-3xl mb-4 block">{vertical.icon}</span>
+              <AlshamIcon id={vertical.iconId} size={36} strokeWidth={1.5} className="mb-4" />
               <h3 className="font-display text-xl text-gold mb-2">{vertical.title}</h3>
               <p className="text-platinum text-sm">{vertical.description}</p>
             </motion.div>

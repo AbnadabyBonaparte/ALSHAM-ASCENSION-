@@ -1,5 +1,8 @@
 import { motion, useInView } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
+import { AlshamIcon } from '@/components/icons'
+import type { IconId } from '@/components/icons'
+import { INSTITUTIONAL_BADGES, TRUST_METRICS } from '@/lib/constants'
 
 function AnimatedCounter({ value, suffix = '' }: { value: number; suffix?: string }) {
   const ref = useRef<HTMLSpanElement>(null)
@@ -35,11 +38,7 @@ function AnimatedCounter({ value, suffix = '' }: { value: number; suffix?: strin
   )
 }
 
-const METRICS = [
-  { value: 9, suffix: '', label: 'Etapas da Metodologia' },
-  { value: 6, suffix: '', label: 'Verticais de Mercado' },
-  { value: 100, suffix: '%', label: 'Foco em Legado' },
-] as const
+const METRICS = TRUST_METRICS
 
 const TESTIMONIALS = [
   {
@@ -81,6 +80,7 @@ export function TrustStack() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="text-center p-8 border border-gold/20"
             >
+              <AlshamIcon id={metric.iconId as IconId} size={32} strokeWidth={1.5} className="mx-auto mb-4" />
               <AnimatedCounter value={metric.value} suffix={metric.suffix} />
               <p className="text-platinum text-sm mt-3 tracking-wide">{metric.label}</p>
             </motion.div>
@@ -110,9 +110,13 @@ export function TrustStack() {
           viewport={{ once: true }}
           className="mt-12 flex flex-wrap justify-center gap-8 opacity-40"
         >
-          {['Universidades', 'Institutos', 'Associações', 'Certificadoras'].map((label) => (
-            <span key={label} className="text-platinum text-xs tracking-[0.15em] uppercase">
-              {label}
+          {INSTITUTIONAL_BADGES.map((badge) => (
+            <span
+              key={badge.label}
+              className="flex items-center gap-2 text-platinum text-xs tracking-[0.15em] uppercase"
+            >
+              <AlshamIcon id={badge.iconId} size={16} strokeWidth={1.5} />
+              {badge.label}
             </span>
           ))}
         </motion.div>

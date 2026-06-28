@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { AlshamIcon } from '@/components/icons'
 import { ILLUSION_ITEMS, LEGACY_ITEMS } from '@/lib/constants'
 
 export function Paradox() {
@@ -28,8 +29,9 @@ export function Paradox() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="border border-bordeaux/30 bg-onyx/50 p-8 md:p-10"
           >
-            <h3 className="text-bordeaux text-sm tracking-[0.1em] uppercase mb-6 font-medium">
-              ❌ A Ilusão da Visibilidade
+            <h3 className="text-bordeaux text-sm tracking-[0.1em] uppercase mb-6 font-medium flex items-center gap-3">
+              <AlshamIcon id="ICO-033" size={20} strokeWidth={1.5} className="text-bordeaux" stroke="currentColor" />
+              A Ilusão da Visibilidade
             </h3>
             <ul className="space-y-4">
               {ILLUSION_ITEMS.map((item) => (
@@ -48,8 +50,9 @@ export function Paradox() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="border border-gold/30 bg-onyx/50 p-8 md:p-10"
           >
-            <h3 className="text-gold text-sm tracking-[0.1em] uppercase mb-6 font-medium">
-              ✅ A Engenharia do Legado
+            <h3 className="text-gold text-sm tracking-[0.1em] uppercase mb-6 font-medium flex items-center gap-3">
+              <AlshamIcon id="ICO-011" size={20} strokeWidth={1.5} />
+              A Engenharia do Legado
             </h3>
             <ul className="space-y-4">
               {LEGACY_ITEMS.map((item) => (

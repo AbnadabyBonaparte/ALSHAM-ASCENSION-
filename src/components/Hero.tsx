@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
+import { AlshamIcon } from '@/components/icons'
 
 const HERO_DESKTOP = '/images/hero/hero-observatory-4k.webp'
 const HERO_MOBILE = '/images/hero/hero-observatory-mobile.webp'
@@ -75,8 +76,9 @@ export function Hero() {
           <a href="#aplicar" className="cta-primary w-full sm:w-auto text-center">
             REQUISITAR DIAGNÓSTICO DE AUTORIDADE™
           </a>
-          <a href="#manifesto" className="cta-outlined w-full sm:w-auto text-center">
-            ASSISTIR AO MANIFESTO ▸
+          <a href="#manifesto" className="cta-outlined w-full sm:w-auto text-center inline-flex items-center justify-center gap-2">
+            ASSISTIR AO MANIFESTO
+            <AlshamIcon id="ICO-038" size={16} strokeWidth={1.5} />
           </a>
         </motion.div>
 

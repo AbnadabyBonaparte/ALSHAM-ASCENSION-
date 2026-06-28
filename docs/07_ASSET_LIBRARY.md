@@ -28,10 +28,10 @@
 
 | Métrica | Valor |
 |---------|-------|
-| Assets produzidos | **1** |
-| Assets aprovados | **1** |
+| Assets produzidos | **41** |
+| Assets aprovados | **41** |
 | Inventário planejado | ~244 (DOC-06) |
-| Fase | **Direção de Arte Fase 1** — HERO-001 em produção |
+| Fase | **Direção de Arte Fase 1** — HERO-001 + Icon System v1.0 |
 
 ---
 
@@ -107,8 +107,52 @@ Cada asset aprovado será registrado neste formato:
 ## Textures / DNA Material (0/9)
 *Aguardando pós-símbolo*
 
-## Icons (0/48)
-*Aguardando DOC-03A ícones*
+## Icons (40/48)
+
+| ID | Nome | Arquivo | Status |
+|----|------|---------|--------|
+| ICO-001 | Foundation | `public/assets/icons/ico-001-foundation.svg` | **Produção** |
+| ICO-002 | Infrastructure | `public/assets/icons/ico-002-infrastructure.svg` | **Produção** |
+| ICO-003 | Expansion | `public/assets/icons/ico-003-expansion.svg` | **Produção** |
+| ICO-004 | Institutional | `public/assets/icons/ico-004-institutional.svg` | **Produção** |
+| ICO-005 | Assets | `public/assets/icons/ico-005-assets.svg` | **Produção** |
+| ICO-006 | Management | `public/assets/icons/ico-006-management.svg` | **Produção** |
+| ICO-007 | Authority | `public/assets/icons/ico-007-authority.svg` | **Produção** |
+| ICO-008 | Knowledge | `public/assets/icons/ico-008-knowledge.svg` | **Produção** |
+| ICO-009 | Research | `public/assets/icons/ico-009-research.svg` | **Produção** |
+| ICO-010 | Governance | `public/assets/icons/ico-010-governance.svg` | **Produção** |
+| ICO-011 | Legacy | `public/assets/icons/ico-011-legacy.svg` | **Produção** |
+| ICO-012 | Vault | `public/assets/icons/ico-012-vault.svg` | **Produção** |
+| ICO-013 | Observatory | `public/assets/icons/ico-013-observatory.svg` | **Produção** |
+| ICO-014 | Select | `public/assets/icons/ico-014-select.svg` | **Produção** |
+| ICO-015 | Project | `public/assets/icons/ico-015-project.svg` | **Produção** |
+| ICO-016 | Architecture | `public/assets/icons/ico-016-architecture.svg` | **Produção** |
+| ICO-017 | Strategy | `public/assets/icons/ico-017-strategy.svg` | **Produção** |
+| ICO-018 | Evidence | `public/assets/icons/ico-018-evidence.svg` | **Produção** |
+| ICO-019 | Canon | `public/assets/icons/ico-019-canon.svg` | **Produção** |
+| ICO-020 | Documentation | `public/assets/icons/ico-020-documentation.svg` | **Produção** |
+| ICO-021 | Automation | `public/assets/icons/ico-021-automation.svg` | **Produção** |
+| ICO-022 | AI | `public/assets/icons/ico-022-ai.svg` | **Produção** |
+| ICO-023 | Security | `public/assets/icons/ico-023-security.svg` | **Produção** |
+| ICO-024 | Community | `public/assets/icons/ico-024-community.svg` | **Produção** |
+| ICO-025 | Publishing | `public/assets/icons/ico-025-publishing.svg` | **Produção** |
+| ICO-026 | Education | `public/assets/icons/ico-026-education.svg` | **Produção** |
+| ICO-027 | Finance | `public/assets/icons/ico-027-finance.svg` | **Produção** |
+| ICO-028 | Health | `public/assets/icons/ico-028-health.svg` | **Produção** |
+| ICO-029 | Law | `public/assets/icons/ico-029-law.svg` | **Produção** |
+| ICO-030 | Technology | `public/assets/icons/ico-030-technology.svg` | **Produção** |
+| ICO-031 | Culture | `public/assets/icons/ico-031-culture.svg` | **Produção** |
+| ICO-032 | Innovation | `public/assets/icons/ico-032-innovation.svg` | **Produção** |
+| ICO-033 | Compass | `public/assets/icons/ico-033-compass.svg` | **Produção** |
+| ICO-034 | Codex | `public/assets/icons/ico-034-codex.svg` | **Produção** |
+| ICO-035 | Archive | `public/assets/icons/ico-035-archive.svg` | **Produção** |
+| ICO-036 | Map | `public/assets/icons/ico-036-map.svg` | **Produção** |
+| ICO-037 | Constellation | `public/assets/icons/ico-037-constellation.svg` | **Produção** |
+| ICO-038 | Navigation | `public/assets/icons/ico-038-navigation.svg` | **Produção** |
+| ICO-039 | Engineering | `public/assets/icons/ico-039-engineering.svg` | **Produção** |
+| ICO-040 | Heritage | `public/assets/icons/ico-040-heritage.svg` | **Produção** |
+
+> Documentação completa: [ICON_SYSTEM.md](./ICON_SYSTEM.md) · Preview: `docs/previews/icon-system-v1.png`
 
 ## Scenes / Hero (1/4)
 

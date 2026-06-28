@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { FormEvent, useState } from 'react'
+import { AlshamIcon } from '@/components/icons'
 import { MARKET_OPTIONS } from '@/lib/constants'
 
 export function CTAFinal() {
@@ -23,7 +24,7 @@ export function CTAFinal() {
           className="text-center mb-12"
         >
           <div className="inline-flex items-center gap-2 mb-8 px-4 py-2 border border-gold/30">
-            <span className="text-gold text-lg">⚜</span>
+            <AlshamIcon id="ICO-040" size={20} strokeWidth={1.5} title="ALSHAM Heritage" />
             <span className="section-eyebrow">ALSHAM SELECT™</span>
           </div>
 
@@ -44,7 +45,7 @@ export function CTAFinal() {
             animate={{ opacity: 1, scale: 1 }}
             className="text-center p-12 border border-gold/30"
           >
-            <span className="text-gold text-4xl mb-4 block">⚜</span>
+            <AlshamIcon id="ICO-040" size={40} strokeWidth={1.5} className="mx-auto mb-4" title="ALSHAM Heritage" />
             <h3 className="font-display text-2xl text-gold mb-4">Candidatura Recebida</h3>
             <p className="text-platinum">
               Sua aplicação ao ALSHAM SELECT™ foi registrada. Resposta confidencial em até 72h úteis.
@@ -145,8 +146,9 @@ export function CTAFinal() {
               />
             </div>
 
-            <button type="submit" className="cta-primary w-full mt-8">
-              ▸ APLICAR AO ALSHAM SELECT™
+            <button type="submit" className="cta-primary w-full mt-8 inline-flex items-center justify-center gap-2">
+              <AlshamIcon id="ICO-038" size={16} strokeWidth={1.5} stroke="currentColor" />
+              APLICAR AO ALSHAM SELECT™
             </button>
 
             <p className="text-center text-platinum text-xs tracking-wide">

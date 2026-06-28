@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { AlshamIcon } from '@/components/icons'
 import { ARE_ITEMS, NOT_ITEMS } from '@/lib/constants'
 
 export function Differentiators() {
@@ -26,8 +27,9 @@ export function Differentiators() {
             transition={{ duration: 0.6 }}
             className="p-8 md:p-10 border-b md:border-b-0 md:border-r border-gold/20"
           >
-            <h3 className="text-bordeaux text-sm tracking-[0.1em] uppercase mb-8 font-medium">
-              ❌ O que a ALSHAM NÃO é
+            <h3 className="text-bordeaux text-sm tracking-[0.1em] uppercase mb-8 font-medium flex items-center gap-3">
+              <AlshamIcon id="ICO-009" size={20} strokeWidth={1.5} className="text-bordeaux" stroke="currentColor" />
+              O que a ALSHAM NÃO é
             </h3>
             <ul className="space-y-5">
               {NOT_ITEMS.map((item) => (
@@ -46,8 +48,9 @@ export function Differentiators() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="p-8 md:p-10"
           >
-            <h3 className="text-gold text-sm tracking-[0.1em] uppercase mb-8 font-medium">
-              ✅ O que a ALSHAM é
+            <h3 className="text-gold text-sm tracking-[0.1em] uppercase mb-8 font-medium flex items-center gap-3">
+              <AlshamIcon id="ICO-007" size={20} strokeWidth={1.5} />
+              O que a ALSHAM é
             </h3>
             <ul className="space-y-5">
               {ARE_ITEMS.map((item) => (

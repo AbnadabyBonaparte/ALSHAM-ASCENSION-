@@ -242,3 +242,25 @@ textarea.underline-input {
     object-position: center 40%;
   }
 }
+
+/* ALSHAM Icon System™ */
+.alsham-icon {
+  color: #c6a45a;
+  transition: color 0.25s ease;
+}
+
+.alsham-icon:hover,
+.group:hover .alsham-icon {
+  color: #f2d18b;
+}
+
+@media (prefers-color-scheme: dark) {
+  .alsham-icon {
+    color: #c6a45a;
+  }
+
+  .alsham-icon:hover,
+  .group:hover .alsham-icon {
+    color: #f2d18b;
+  }
+}
