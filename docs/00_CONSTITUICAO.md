@@ -39,7 +39,7 @@
 
 **Freeze:** [ARCHITECTURE_FREEZE_v1.0.md](./ARCHITECTURE_FREEZE_v1.0.md) — até 2026-09-26
 
-**Fase atual:** **VALIDAÇÃO** (arquitetura encerrada)
+**Fase atual:** **EMPÍRICA** — Fase Conceitual encerrada · ver [DECLARACAO_FASE_EMPIRICA_v1.0](./DECLARACAO_FASE_EMPIRICA_v1.0.md)
 
 Todo documento, asset, código e experiência da ALSHAM é manifestação deste princípio — nunca sua origem.
 
@@ -55,6 +55,7 @@ Todo documento, asset, código e experiência da ALSHAM é manifestação deste 
 | **KGR** | [Knowledge Governance Registry](./KGR/00_KGR_README.md) | Evolução conceitual viva (ADR/CER/VER/GDR/STR) | **Governança** |
 | **GLO** | [Glossário Oficial EIP](./GLOSSARIO_OFICIAL_EIP.md) | Termos canônicos (15 v1.0) | **Canônico** |
 | **CANON** | [EIP Canon](./CANON_EIP.md) | Artigos canônicos do modelo | **Canônico** |
+| **DECL** | [Declaração Fase Empírica](./DECLARACAO_FASE_EMPIRICA_v1.0.md) | Orientação epistemológica pós-conceito | **Supremo Epistemológico** |
 | **FRZ** | [Architecture Freeze v1.0](./ARCHITECTURE_FREEZE_v1.0.md) | Congelamento 90 dias | **Ativo** |
 | **00** | [Constituição](./00_CONSTITUICAO.md) | Lei operacional, metadados, coerência | Supremo Operacional |
 | **01** | [Manifesto Filosófico](./01_MANIFESTO_FILOSOFICO.md) | Por que a ALSHAM existe | Fundacional |
@@ -196,7 +197,9 @@ Classificação de todo elemento visual, tipográfico e de experiência:
 
 ## VII. GATE FASE 2 — PRODUÇÃO VISUAL
 
-### Fase atual: VALIDAÇÃO (Architecture Freeze v1.0)
+### Fase atual: EMPÍRICA (DECL-EMP-1.0 · Architecture Freeze v1.0)
+
+Pergunta oficial: *"O que os projetos reais nos ensinam sobre o EIP?"*
 
 Arquitetura documental **encerrada** até 2026-09-26. Prioridade: **evidências** (VER no KGR).
 

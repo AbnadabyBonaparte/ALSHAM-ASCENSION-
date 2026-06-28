@@ -14,7 +14,7 @@
 | **Proprietário** | EIP / ALSHAM Global Commerce™ |
 | **Documento pai** | [MAD-1.0](../MASTER_ARCHITECTURE_DECISION_v1.0.md) |
 | **Dependências** | MAD-1.0, [GLO](../GLOSSARIO_OFICIAL_EIP.md), [CANON](../CANON_EIP.md) |
-| **Documentos relacionados** | [DOCUMENT_AUTHORITY_MATRIX](../DOCUMENT_AUTHORITY_MATRIX.md), [VALIDATION_ROADMAP](../VALIDATION_ROADMAP.md) |
+| **Documentos relacionados** | [DECLARACAO_FASE_EMPIRICA_v1.0](../DECLARACAO_FASE_EMPIRICA_v1.0.md), [DOCUMENT_AUTHORITY_MATRIX](../DOCUMENT_AUTHORITY_MATRIX.md), [VALIDATION_ROADMAP](../VALIDATION_ROADMAP.md) |
 | **Última revisão** | 2026-06-28 |
 | **Data** | 2026-06-28 |
 | **Nível de autoridade** | Governança conceitual |
@@ -28,6 +28,8 @@ O KGR amplia o conceito de ADR (Architecture Decision Records).
 **Não registra apenas decisões.** Registra **todo o ciclo de vida do conhecimento** no ecossistema EIP/ALSHAM.
 
 > A partir deste momento, **nenhuma mudança conceitual** pode ocorrer sem registro correspondente no KGR.
+
+**Princípio da Evidência** ([DECL-EMP-1.0](../DECLARACAO_FASE_EMPIRICA_v1.0.md)): conceitos evoluem por aplicação real — não por consenso interno.
 
 ---
 
@@ -70,15 +72,22 @@ Todo ADR deve conter:
 
 ---
 
-## V. FORMATO VER (padrão)
+## V. FORMATO VER (padrão — paper aplicado)
 
-1. Hipótese ou conceito validado
-2. Projeto / aplicação
-3. Resultados observados
-4. Métricas (quando aplicável)
-5. Lições aprendidas
-6. Estudo de caso (narrativa)
-7. Responsável · Data · Nível de maturidade alcançado
+Estrutura obrigatória para estudos de caso. Ver [VER-0001-TEMPLATE](../VER/VER-0001-TEMPLATE.md).
+
+1. **Problema**
+2. **Hipótese aplicada** (conceitos GLO)
+3. **Projeto executado**
+4. **Artefatos produzidos**
+5. **Resultados obtidos** (métricas + veredito hipótese)
+6. **Limitações**
+7. **Aprendizados**
+8. **Mudanças propostas ao EIP** (CER/ADR/GDR — ou declaração de não-mudança)
+9. **Impacto no Canon**
+10. Aprovação · Responsável · Data · Nível de maturidade alcançado
+
+> VER não é marketing. Não é case comercial. É evidência.
 
 ---
 

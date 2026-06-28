@@ -67,17 +67,18 @@ Hipótese → Protótipo Conceitual → Aplicação → Evidência → Revisão 
 
 1. Nenhum artigo do Canon contradiz MAD-1.0 ou GLO-1.0
 2. Alterações exigem CER + GDR (se termos) + ADR (se estrutural)
-3. Durante Architecture Freeze: **sem novos artigos** — apenas clarificação via GDR
+3. Durante Architecture Freeze: **sem novos artigos por iniciativa conceitual**
+4. **Artigos derivam de VERs aprovados** — Canon não antecede evidência
 
 ---
 
-## ARTIGOS FUTUROS (pós-freeze, via KGR)
+## ARTIGOS FUTUROS (somente pós-VER)
 
-| Artigo | Status |
-|--------|--------|
-| A1 — Natureza do EIP | Pendente Sprint 1 |
-| A2 — Critérios de Evidência | Pendente VER-0001 |
-| A3 — Curadoria SELECT | Parcial (DOC-02) |
+| Artigo | Status | VER fonte |
+|--------|--------|-----------|
+| A1 — Natureza do EIP | Aguardando VER | VER-0001 |
+| A2 — Critérios de Evidência | Aguardando VER | VER-0001+ |
+| A3 — Curadoria SELECT | Parcial (DOC-02) | VER pendente |
 
 ---
 

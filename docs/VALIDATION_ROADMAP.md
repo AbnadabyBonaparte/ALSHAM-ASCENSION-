@@ -1,5 +1,6 @@
 # VALIDATION ROADMAP
-## Fase de Validação — EIP / ALSHAM
+## Fase de Ciência Aplicada — EIP / ALSHAM
+## *(Operacionalização da Fase Empírica — DECL-EMP-1.0)*
 
 ---
 
@@ -7,13 +8,22 @@
 
 | Campo | Valor |
 |-------|-------|
-| **ID** | `VAL-RM-1.0` |
-| **Versão** | 1.0 |
+| **ID** | `VAL-RM-1.1` |
+| **Versão** | 1.1 |
 | **Status** | ATIVO |
-| **Documento pai** | MAD-1.0 |
-| **Dependências** | ARCHITECTURE_FREEZE_v1.0, KGR |
+| **Documento pai** | [MAD-1.0](./MASTER_ARCHITECTURE_DECISION_v1.0.md) |
+| **Dependências** | [DECLARACAO_FASE_EMPIRICA_v1.0](./DECLARACAO_FASE_EMPIRICA_v1.0.md), [ARCHITECTURE_FREEZE_v1.0](./ARCHITECTURE_FREEZE_v1.0.md), KGR |
 | **Última revisão** | 2026-06-28 |
 | **Período** | 2026-06-28 → 2026-09-26 |
+
+---
+
+## NOTA DE VERSIONAMENTO (v1.0 → v1.1)
+
+- Terminologia **Sprint** substituída por **Ciclo** (identidade EIP, não software)
+- Prioridade invertida: **VER-0001 antes do Canon**
+- Identidade visual **totalmente congelada** nos 90 dias
+- Indicador cultural: [EIP_EVIDENCE_MATURITY.md](./EIP_EVIDENCE_MATURITY.md)
 
 ---
 
@@ -21,80 +31,107 @@
 
 Produzir **conhecimento validado** por meio de aplicação real, evidências (VER) e estudos de caso — não novos documentos arquiteturais.
 
+> *Implementation without architecture is chaos — a arquitetura já existe. Agora: implementação e evidência.*
+
 ---
 
-## SPRINT 1 — Glossário e Canon (Semanas 1–2)
+## CICLO DE EVIDÊNCIAS 01 — VER-0001 (PRIORIDADE MÁXIMA)
 
 | Item | Detalhe |
 |------|---------|
-| **Objetivo** | Operacionalizar terminologia única em 100% dos documentos e comunicações |
-| **Entregáveis** | GLO-1.0 em uso; CANON-1.0 artigos A1 esboçado; zero termo órfão |
-| **Critérios de conclusão** | Auditoria terminológica passa; nenhum doc introduz termo fora do glossário |
+| **Objetivo** | Primeiro estudo de caso documentado como paper aplicado |
+| **Entregáveis** | `KGR/VER/VER-0001-*.md` preenchido com projeto real |
+| **Critérios de conclusão** | Estrutura paper completa · dados reais · zero mock · aprovação Direção EIP |
+| **Alimenta** | Canon (artigos derivados) · CER (se conceito evoluir) · maturidade em EIP_EVIDENCE_MATURITY |
+
+**Template:** [VER-0001-TEMPLATE.md](./KGR/VER/VER-0001-TEMPLATE.md)
 
 ---
 
-## SPRINT 2 — Primeiro Projeto (Semanas 3–5)
+## CICLO DE VALIDAÇÃO 01 — Primeiro Projeto (paralelo ao VER)
 
 | Item | Detalhe |
 |------|---------|
-| **Objetivo** | Aplicar modelo EIP/ALSHAM em **um** projeto real (cliente ou piloto interno) |
-| **Entregáveis** | Projeto de Engenharia iniciado pós-SELECT; escopo documentado |
-| **Critérios de conclusão** | Etapa mínima GENESIS iniciada ou equivalente documentado |
+| **Objetivo** | Aplicar modelo EIP/ALSHAM em **um** projeto real (cliente ou piloto) |
+| **Entregáveis** | Projeto de Engenharia pós-SELECT · artefatos produzidos · métricas iniciais |
+| **Critérios de conclusão** | Etapa documentada com escopo, responsável e data de início verificável |
 
 ---
 
-## SPRINT 3 — VER-0001 (Semanas 5–6)
+## CICLO DE PESQUISA 01 — Revisão Conceitual Pós-Evidência
 
 | Item | Detalhe |
 |------|---------|
-| **Objetivo** | Primeira **Validation Evidence Record** no KGR |
-| **Entregáveis** | `KGR/VER/VER-0001-*.md` com métricas, resultados, lições |
-| **Critérios de conclusão** | VER aprovado; eleva maturidade de ≥1 conceito |
+| **Objetivo** | Revisar conceitos **somente** quando sustentados por VER-0001 |
+| **Entregáveis** | 0–N registros KGR (CER/GDR/ADR) **motivados por VER** |
+| **Critérios de conclusão** | Nenhuma mudança conceitual sem link explícito a VER |
+
+**Regra:** Canon expande-se **depois** do VER — nunca antes.
 
 ---
 
-## SPRINT 4 — Estudos de Caso (Semanas 7–9)
+## CICLO DE EVIDÊNCIAS 02 — Segundo estudo (após VER-0001 aprovado)
 
 | Item | Detalhe |
 |------|---------|
-| **Objetivo** | Narrativa institucional de aplicação do modelo |
-| **Entregáveis** | 1–2 estudos de caso (formato VER estendido ou publicação) |
-| **Critérios de conclusão** | Dados reais; aprovação cliente quando aplicável; zero mock |
+| **Objetivo** | Confirmar reprodutibilidade do modelo em contexto distinto |
+| **Entregáveis** | VER-0002 · atualização de EIP_EVIDENCE_MATURITY |
+| **Critérios de conclusão** | ≥1 conceito com evidência em ≥2 projetos distintos |
 
 ---
 
-## SPRINT 5 — Métricas (Semanas 9–11)
+## CICLO DE VALIDAÇÃO 02 — Métricas operacionais
 
 | Item | Detalhe |
 |------|---------|
-| **Objetivo** | Substituir placeholders por métricas verificáveis (landing, SELECT, projeto) |
-| **Entregáveis** | Dashboard ou doc de métricas; Trust Stack com dados reais |
-| **Critérios de conclusão** | DOC-11 critérios de aceite v1 atendidos para métricas |
+| **Objetivo** | Substituir placeholders por métricas verificáveis de operação real |
+| **Entregáveis** | Métricas SELECT · pipeline · resultados de projeto (não landing estética) |
+| **Critérios de conclusão** | Dados auditáveis · fonte documentada · sem números inventados |
 
 ---
 
-## SPRINT 6 — Publicação (Semanas 11–13)
+## CICLO DE PESQUISA 02 — Síntese e publicação técnica
 
 | Item | Detalhe |
 |------|---------|
-| **Objetivo** | Externalizar evidências selecionadas (white paper, case, manifesto público) |
-| **Entregáveis** | 1 publicação alinhada a CANON + GLO |
-| **Critérios de conclusão** | Revisão coerência 8/8; aprovação proprietário |
+| **Objetivo** | Externalizar evidências acumuladas em formato técnico (não marketing) |
+| **Entregáveis** | White paper ou capítulo derivado de ≥2 VERs |
+| **Critérios de conclusão** | Revisão por pares internos · alinhamento GLO · aprovação proprietário |
 
 ---
 
-## PARALELO (não bloqueia sprints — execução congelada)
+## CONGELADO (90 DIAS — SEM EXCEÇÃO ESTÉTICA)
 
-| Item | Gate |
-|------|------|
-| ADR-0001 fechamento sigla EIP | Reunião final |
-| DOC-03B aprovação → símbolo → hero | Pós-03B; não é nova arquitetura |
+| Item | Status |
+|------|--------|
+| Logo · símbolo · hero · landing visual | **Congelado** |
+| DOC-03B → DOC-10 | Execução suspensa |
+| Novos slogans · taxonomias visuais | **Proibido** |
+| ADR-0001 (sigla EIP) | Paralelo — não bloqueia VER |
 
 ---
 
 ## RETROSPECTIVA FREEZE
 
-**Data:** 2026-09-26 — decisão MAD-1.1 ou extensão freeze.
+**Data:** 2026-09-26
+
+Pergunta central da retrospectiva:
+
+> *Quantos conceitos do EIP possuem evidência de aplicação documentada?*
+
+Não: *quantos documentos produzimos?*
+
+---
+
+## HORIZONTE (12–24 MESES)
+
+| Marco | Alvo orientativo |
+|-------|------------------|
+| Projetos com VER | ~20 |
+| VERs publicados | ~20 |
+| ADRs motivados por evidência | ~20 |
+| CERs derivados de VER | ~20 |
+| **Saída** | Livro técnico — *Engineering of Intellectual Patrimony* |
 
 ---
 

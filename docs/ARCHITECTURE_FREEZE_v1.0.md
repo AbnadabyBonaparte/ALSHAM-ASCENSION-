@@ -20,9 +20,11 @@
 
 ## DECLARAÇÃO
 
-A **fase de Arquitetura está encerrada.**
+A **Fase Conceitual está encerrada.**
 
-A **fase de Validação** está iniciada.
+A **Fase Empírica** está iniciada.
+
+Ver: [DECLARACAO_FASE_EMPIRICA_v1.0.md](./DECLARACAO_FASE_EMPIRICA_v1.0.md)
 
 ---
 
@@ -34,22 +36,23 @@ A **fase de Validação** está iniciada.
 - Alterar hierarquia MAD/DOC sem ADR excepcional
 - Mudar nomenclatura canônica (exceto fechamento ADR-0001 EIP)
 - Refinar arquitetura indefinidamente
+- **Identidade visual:** logo, símbolo, hero, landing estética, slogans, taxonomias visuais (DOC-08–10 suspensos)
 
-### Prioridade (ordem)
+### Prioridade (ordem — v1.1 Ciência Aplicada)
 
-1. Glossário Oficial (`GLOSSARIO_OFICIAL_EIP.md`) — **uso**, expansão só via GDR
-2. Canon EIP
-3. KGR (VER, CER, GDR, STR)
-4. Estudos de Caso
-5. Métricas
-6. Evidências
-7. Publicações
+1. **VER-0001** — primeiro estudo de caso (paper aplicado)
+2. Projetos reais — atender clientes, aplicar modelo
+3. [EIP_EVIDENCE_MATURITY](./EIP_EVIDENCE_MATURITY.md) — atualizar a cada VER
+4. KGR (VER, CER, GDR, STR) — **somente motivado por evidência**
+5. Glossário — **uso**, não expansão
+6. Canon — **derivado de VERs**, não antecede evidência
+7. Publicações técnicas (não marketing)
 
 ### Permitido
 
-- Registros KGR
+- Registros KGR motivados por projeto real
 - Aplicação em projetos reais
-- DOC-03B aprovação + execução visual congelada (símbolo → hero) — **não é nova arquitetura**
+- Métricas operacionais verificáveis
 
 ---
 

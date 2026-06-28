@@ -19,14 +19,15 @@
 ## PRECEDÊNCIA (maior → menor)
 
 1. MAD-1.0
-2. KGR (registros de mudança)
-3. CANON-1.0
-4. GLO-1.0
-5. DOC-00
-6. DOC-01..04, DOC-03A, DOC-03B
-7. DOC-05..07
-8. DOC-08..13
-9. Código / assets
+2. **DECL-EMP-1.0** (orientação epistemológica — Fase Empírica)
+3. KGR (registros de mudança)
+4. CANON-1.0
+5. GLO-1.0
+6. DOC-00
+7. DOC-01..04, DOC-03A, DOC-03B
+8. DOC-05..07
+9. DOC-08..13
+10. Código / assets
 
 ---
 
@@ -35,6 +36,7 @@
 | Documento | ID | Proprietário | Aprovador | Autoridade | Processo de alteração |
 |-----------|-----|--------------|-----------|------------|------------------------|
 | Master Architecture Decision | MAD-1.0 | Direção EIP | Proprietário | Supremo Arquitetural | ADR + MAD minor/major pós-freeze |
+| Declaração Fase Empírica | DECL-EMP-1.0 | Direção EIP | Proprietário | Supremo Epistemológico | Revisão apenas com corpo de VERs |
 | Knowledge Governance Registry | KGR | Direção EIP | Proprietário | Governança | ADR-0002 (instituição); novos registros por tipo |
 | EIP Canon | CANON-1.0 | Direção EIP | Proprietário | Canônico | CER + ADR; freeze bloqueia novos artigos |
 | Glossário Oficial | GLO-1.0 | Direção EIP | Proprietário | Canônico | GDR obrigatório |
