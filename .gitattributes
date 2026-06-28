@@ -1,0 +1,9 @@
+# Ensure binary assets are never UTF-16 re-encoded on Windows
+*.png binary
+*.webp binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary

@@ -182,6 +182,19 @@ textarea.underline-input {
 }
 
 /* HERO-001 — The Observatory */
+.hero-observatory {
+  background-color: var(--color-obsidian);
+  background-image: radial-gradient(
+    ellipse 80% 60% at 50% 20%,
+    color-mix(in srgb, var(--color-navy) 80%, var(--color-obsidian)) 0%,
+    var(--color-obsidian) 70%
+  );
+}
+
+.hero-observatory__media {
+  background-color: var(--color-obsidian);
+}
+
 .hero-observatory__image {
   width: 100%;
   height: 100%;

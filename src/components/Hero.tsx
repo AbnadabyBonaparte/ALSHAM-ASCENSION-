@@ -1,12 +1,11 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
 import { AlshamIcon } from '@/components/icons'
-
-const HERO_DESKTOP = '/images/hero/hero-observatory-4k.webp'
-const HERO_MOBILE = '/images/hero/hero-observatory-mobile.webp'
+import { HERO_ASSETS, useHeroImageSrc } from '@/lib/heroAssets'
 
 export function Hero() {
   const sectionRef = useRef<HTMLElement>(null)
+  const { src, format, handleError } = useHeroImageSrc()
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ['start start', 'end start'],
@@ -18,18 +17,21 @@ export function Hero() {
       ref={sectionRef}
       className="hero-observatory relative min-h-[100svh] flex items-center justify-center overflow-hidden"
       aria-label="The Observatory — HERO-001"
+      data-hero-format={format}
     >
       <motion.div className="hero-observatory__media absolute inset-0" style={{ y: imageY }}>
-        <picture>
-          <source media="(max-width: 768px)" srcSet={HERO_MOBILE} type="image/webp" />
+        {src ? (
           <img
-            src={HERO_DESKTOP}
+            key={src}
+            src={src}
             alt=""
             className="hero-observatory__image"
             fetchPriority="high"
             decoding="async"
+            loading="eager"
+            onError={handleError}
           />
-        </picture>
+        ) : null}
       </motion.div>
 
       <div className="hero-observatory__overlay absolute inset-0" aria-hidden />
@@ -76,7 +78,10 @@ export function Hero() {
           <a href="#aplicar" className="cta-primary w-full sm:w-auto text-center">
             REQUISITAR DIAGNÓSTICO DE AUTORIDADE™
           </a>
-          <a href="#manifesto" className="cta-outlined w-full sm:w-auto text-center inline-flex items-center justify-center gap-2">
+          <a
+            href="#manifesto"
+            className="cta-outlined w-full sm:w-auto text-center inline-flex items-center justify-center gap-2"
+          >
             ASSISTIR AO MANIFESTO
             <AlshamIcon id="ICO-038" size={16} strokeWidth={1.5} />
           </a>
@@ -102,3 +107,6 @@ export function Hero() {
     </section>
   )
 }
+
+// Re-export for preload hints in index.html documentation
+export { HERO_ASSETS }

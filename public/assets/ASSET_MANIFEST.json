@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "updated": "2026-06-28",
   "sync": "docs/07_ASSET_LIBRARY.md",
   "assets": [
@@ -7,15 +7,22 @@
       "id": "HERO-001",
       "name": "The Observatory",
       "category": "Hero",
-      "version": "1.0",
+      "version": "1.1",
       "status": "Produção",
       "origin": "Direção de Arte ALSHAM — Fase 1",
       "description": "Cena institucional principal — Observatório do Patrimônio",
       "date": "2026-06-28",
       "files": {
-        "desktop": "/images/hero/hero-observatory-4k.webp",
-        "mobile": "/images/hero/hero-observatory-mobile.webp",
-        "library": "/assets/hero/hero-observatory-4k.webp"
+        "source": "/images/hero/hero-observatory-4k.png",
+        "desktop": {
+          "webp": "/images/hero/hero-observatory-desktop.webp",
+          "png": "/images/hero/hero-observatory-desktop.png"
+        },
+        "mobile": {
+          "webp": "/images/hero/hero-observatory-mobile.webp",
+          "png": "/images/hero/hero-observatory-mobile.png"
+        },
+        "library": "/assets/hero/hero-observatory-desktop.png"
       }
     }
   ]
