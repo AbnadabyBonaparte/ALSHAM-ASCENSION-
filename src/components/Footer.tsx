@@ -68,6 +68,33 @@ export function Footer() {
           ))}
         </div>
 
+        <div className="border-t border-gold/10 pt-10 mb-10">
+          <h4 className="text-gold text-xs tracking-[0.12em] uppercase mb-6 text-center">
+            Universo Bonaparte · ALSHAM
+          </h4>
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-3">
+            {[
+              { label: 'Casa Bonaparte', url: 'https://casabonaparte.com.br' },
+              { label: 'ALSHAM Global', url: 'https://alshamglobal.com.br' },
+              { label: 'Livraria Bonaparte', url: 'https://livraria.casabonaparte.com.br' },
+              { label: 'Aby Bonaparte', url: 'https://abnadabybonaparte.alshamglobal.com.br' },
+              { label: 'A Família', url: 'https://the-bonaparte-family.vercel.app' },
+              { label: 'ALSHAM Pulso', url: 'https://pulso.alshamglobal.com.br' },
+              { label: 'Canta & Siriema', url: 'https://canta-siriema.alshamglobal.com.br' },
+            ].map((link) => (
+              <a
+                key={link.url}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-platinum text-xs tracking-[0.1em] uppercase hover:text-gold transition-colors"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        </div>
+
         <div className="gold-line mb-12" />
 
         <div className="text-center mb-8">

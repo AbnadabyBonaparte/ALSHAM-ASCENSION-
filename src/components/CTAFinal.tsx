@@ -154,6 +154,20 @@ export function CTAFinal() {
             <p className="text-center text-platinum text-xs tracking-wide">
               Resposta confidencial em até 72h úteis.
             </p>
+
+            <div className="text-center mt-4">
+              <span className="text-platinum text-xs tracking-wide opacity-50">ou</span>
+              <div className="mt-2">
+                <a
+                  href="https://wa.me/5563992428800?text=Quero+conversar+sobre+o+ALSHAM+SELECT"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gold text-xs tracking-[0.15em] uppercase hover:text-champagne transition-colors"
+                >
+                  Conversar diretamente via WhatsApp →
+                </a>
+              </div>
+            </div>
           </motion.form>
         )}
       </div>
