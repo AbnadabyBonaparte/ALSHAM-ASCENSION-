@@ -7,6 +7,8 @@ const NAV_ITEMS = [
   { label: 'Metodologia', href: '#metodologia' },
   { label: 'Verticais', href: '#verticais' },
   { label: 'Manifesto', href: '#manifesto' },
+  { label: 'Como Funciona', href: '#como-funciona' },
+  { label: 'Modelos', href: '#modelos' },
 ]
 
 export function TopBar() {
