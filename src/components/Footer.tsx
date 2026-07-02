@@ -80,7 +80,7 @@ export function Footer() {
               { label: 'Aby Bonaparte', url: 'https://abnadabybonaparte.alshamglobal.com.br' },
               { label: 'A Família', url: 'https://the-bonaparte-family.vercel.app' },
               { label: 'ALSHAM Pulso', url: 'https://pulso.alshamglobal.com.br' },
-              { label: 'Canta & Siriema', url: 'https://canta-siriema.alshamglobal.com.br' },
+              { label: 'Bonaparte Cast', url: 'https://podcast.casabonaparte.com.br' },
             ].map((link) => (
               <a
                 key={link.url}
@@ -92,6 +92,16 @@ export function Footer() {
                 {link.label}
               </a>
             ))}
+          </div>
+
+          <div className="flex justify-center gap-6 mt-6">
+            {/* SUBSTITUIR: @alshamglobal quando criado */}
+            <a href="#" className="text-platinum text-xs tracking-[0.1em] uppercase opacity-40">
+              Instagram · Em breve
+            </a>
+            <a href="#" className="text-platinum text-xs tracking-[0.1em] uppercase opacity-40">
+              YouTube · Em breve
+            </a>
           </div>
         </div>
 
