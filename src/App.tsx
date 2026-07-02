@@ -1,4 +1,5 @@
 import { AuthorityTicker } from '@/components/AuthorityTicker'
+import { BibliotecaALSHAM } from '@/components/BibliotecaALSHAM'
 import { CTAFinal } from '@/components/CTAFinal'
 import { Differentiators } from '@/components/Differentiators'
 import { Footer } from '@/components/Footer'
@@ -33,6 +34,7 @@ export default function App() {
         <TargetAudience />
         <Differentiators />
         <TrustStack />
+        <BibliotecaALSHAM />
         <CTAFinal />
       </main>
       <Footer />
